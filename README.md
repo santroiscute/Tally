@@ -59,7 +59,7 @@ Before importing into Tally, make sure ledger names exactly match the ledgers in
 
 ## Session Store Structure
 
-The app intentionally has no persistent database dependency. `services/session_store.py` initializes these in-memory collections inside `st.session_state`:
+The app intentionally has no persistent storage dependency. `services/session_store.py` initializes these in-memory collections inside `st.session_state`:
 
 - `users_store`: session users with PBKDF2 password hashes.
 - `entities_store`: company/entity master records.
@@ -77,4 +77,3 @@ Multi-entity separation is enforced by entity ids and by querying entities throu
 - The PDF parser reads text-based PDFs. Scanned image PDFs should be OCR processed before upload.
 - Add SSO, role-based sharing, and approval workflows by extending `AuthService`, `EntityService`, and a future repository layer.
 - Tally import behavior can vary by configuration. Validate XML in a staging Tally company before production import.
-# Tally

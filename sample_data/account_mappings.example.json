@@ -1,0 +1,17 @@
+{
+  "trading_company": {
+    "expense_account": "Purchase Accounts",
+    "tax_account": "Input GST",
+    "payable_account": "Sundry Creditors"
+  },
+  "services_company": {
+    "expense_account": "Professional Fees",
+    "tax_account": "Input GST",
+    "payable_account": "Accounts Payable"
+  },
+  "manufacturing_company": {
+    "expense_account": "Raw Material Purchases",
+    "tax_account": "Input GST",
+    "payable_account": "Sundry Creditors"
+  }
+}
